@@ -6,7 +6,7 @@ ccflags-y += -I$(srctree)/drivers/power/supply/mediatek/charger
 ccflags-y += -I$(srctree)/drivers/power/supply/mediatek/misc
 ccflags-y += -I$(srctree)/drivers/misc/mediatek/typec/tcpc/inc
 
-subdir-ccflags-y += -Werror -I$(srctree)/drivers/misc/mediatek/pmic/include
+subdir-ccflags-y +=  -I$(srctree)/drivers/misc/mediatek/pmic/include
 
 ifeq ($(TARGET_FACTORY_VERSION),true)
 subdir-ccflags-y += -DFACTORY_VERSION
